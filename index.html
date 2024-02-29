@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabella Beauty</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="https://cdn-icons-png.freepik.com/256/1006/1006771.png" alt="Logo" width="50" height="50">
+        <ul class="navigation">
+            <li><button id="nav-buttons"><a href="index.html">Home</a></li>
+            <li><button id="nav-buttons"><a href="profile.html" target="_blank">Our Profile</a></li>
+            <li><button id="nav-buttons" onclick="scrollToSection('message-form')">Message Us</li>
+        </ul>
+    </header>
+<div class="our-profile">
+    <p>Hi <span id="name">Anon</span>, Welcome to Arabella Beauty!</p>
+    <div id="paragraph1"><p>Indulge in a luxurious escape at our salon, where beauty and relaxation converge for a truly transformative experience.</p></div>
+</div>
+<br>
+<div class="banner" style="background-image: url(assets/online-shop.jpeg);"></div>
+<br>
+<div class="Locations">
+    <h2>Visit Our Salon:</h2>
+</div>
+<br>
+    <div class="headquarters">
+        <div>
+            <div class="icon" style="background-image: url('assets/jakarta.jpg');"></div>
+            <div class="icon-text"><p>Jakarta</p></div>
+        </div>
+        <div>
+            <div class="icon" style="background-image: url('assets/bandung.png');"></div>
+            <div class="icon-text"><p>Bandung</p></div>
+        </div>
+        <div>
+            <div class="icon" style="background-image: url('assets/surabaya.jpg');"></div>
+            <div class="icon-text"><p>Surabaya</p></div>
+        </div>
+        <div>
+            <div class="icon" style="background-image: url('assets/Jogja.jpg');"></div>
+            <div class="Jogja"><p>Jogjakarta</p></div>
+        </div>
+        <div>
+            <div class="icon" style="background-image: url('assets/medan.jpg')"></div>
+            <div class="Medan"><p>Medan</p></div>
+        </div>
+    </div>
+<br>
+<div class="messageUs">
+<h2>Message Us</h2>
+    <div id="inputForm">
+        <div class="message-form">
+        <form name="message-form" onsubmit="return validateForm()">
+            <b>Name:</b><input placeholder="Name" type="text" name="full-name" />
+            <br>
+            <b>Birth Date</b>: <input type="date" name="birth-date" />
+            <br>
+            <b>Gender:</b>
+            <input type="radio" id="male" name="gender" value="Male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Female</label>
+            <input type="radio" id="unknown" name="gender" value="Rather not say" />
+            <label for="unknown">Rather not say</label>
+            <br>
+            <b>Message:</b>
+            <textarea placeholder="Write something..." name="messages"></textarea>
+            <br>
+            <input type="submit" value="Submit Form" />
+        </form></div>
+        <ul id="Form">
+            <li><b>Name:</b> <span id="form-full-name"></span></li>
+            <li><b>Birth Date:</b> <span id="form-birth-date"></span></li>
+            <li><b>Gender:</b> <span id="form-gender"></span></li>
+            <li><b>Message:</b> <i><span id="form-messages"></span></i></li>
+        </ul>
+    </div>
+</div>
+</body>
+<br>
+<br>
+<br>
+<footer>
+    <div id="createdBy"><p>Created by Clarissa Atikah B.</p></div>
+</footer>
+</html>
