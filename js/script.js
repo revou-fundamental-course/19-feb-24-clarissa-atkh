@@ -2,8 +2,8 @@
 let name = prompt("Please submit your name before we get started.","")
 document.getElementById("name").innerHTML = name;
 
-function scrollToSection() {
-    document.getElementById("messageForm").scrollIntoView({behavior: 'smooth'});
+function scrollToTargetDiv() {
+    document.getElementById('inputForm').scrollIntoView({behavior: 'smooth'});
   }
 
 function validateForm() {
